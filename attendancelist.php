@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Attendance Report Report</title><link rel="icon" href="../img/favicon2.png">
+  <title>Отчет о посещаемости</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -62,12 +62,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Attendance Report
-        <small>Attendance Report Details</small>
+      Отчет о посещаемости
+        <small>Детальный отчет о посещаемости</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Attendance Report</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Отчет о посещаемости</a></li>
+        <li class="active">Детальный</li>
       </ol>
     </section>
 
@@ -83,8 +83,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Attendance Report Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новый отчет о посещаемости успешно добавлен
               </div>
 
 
@@ -94,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Session Details</h3>
+              <h3 class="box-title">Детальные сведения</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -102,18 +102,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="box-body">
 
                   <div class="form-group">
-                  <label for="exampleInputPassword1">Attendance ID</label>
+                  <label for="exampleInputPassword1">Идентификатор присутствия</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1" disabled="disabled" value=<?php echo "'".$_GET['aid']."'"; ?>>
                 </div>
 
                   <div class="form-group">
-                  <label for="exampleInputPassword1">Date</label>
+                  <label for="exampleInputPassword1">Дата</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1" disabled="disabled" value=<?php echo "'".$_GET['date']."'"; ?>>
                 </div>
 
 
                   <div class="form-group">
-                  <label for="exampleInputPassword1">Subject ID</label>
+                  <label for="exampleInputPassword1">Идентификатор предмета</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1" disabled="disabled" value=<?php echo "'".$_GET['subject']."'"; ?>>
                 </div>
 
@@ -121,7 +121,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Start Time</label>
+                  <label for="exampleInputPassword1">Время начала</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1" disabled="disabled" value=<?php echo "'".$_GET['stime']."'"; ?>>
                 </div>
 
@@ -144,9 +144,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   $result = $conn->query($sql);
 
                   if ($result->num_rows > 0) {
-            echo ' <a  href="attendancelist.php?view='.$_GET['aid'].'&aid='.$_GET['aid'].'&date='.$_GET['date'].'&subject='.$_GET['subject'].'&stime='.$_GET['stime'].'"  class="btn btn-primary">View Attendance</a>';
+            echo ' <a  href="attendancelist.php?view='.$_GET['aid'].'&aid='.$_GET['aid'].'&date='.$_GET['date'].'&subject='.$_GET['subject'].'&stime='.$_GET['stime'].'"  
+            class="btn btn-primary">Посмотреть посещаемость</a>';
               
-                                  }else{echo '<a href="attendancelist.php?mark='.$_GET['aid'].'&class='.$_GET['class'].'&aid='.$_GET['aid'].'&date='.$_GET['date'].'&subject='.$_GET['subject'].'&stime='.$_GET['stime'].'  "class="btn btn-primary">Mark Attendance</a>';}
+                                  }else{echo '<a href="attendancelist.php?mark='.$_GET['aid'].'&class='.$_GET['class'].'&aid='.$_GET['aid'].'&date='.$_GET['date'].
+                                    '&subject='.$_GET['subject'].'&stime='.$_GET['stime'].'  "class="btn btn-primary">Отметить посещаемость</a>';}
 
                   ?>
 
@@ -204,7 +206,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Students Attendance</h3>
+              <h3 class="box-title">Посещаемость студентов</h3>
             </div>
             
             <!-- /.box-header -->
@@ -212,9 +214,9 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Student ID</th>
-                  <th>Name</th>
-                  <th>Attendance</th>
+                  <th>Id студента</th>
+                  <th>ФИО</th>
+                  <th>Посещаемость</th>
                   
                   
                 </tr>
@@ -236,8 +238,8 @@ x.style.display='block';</script>";
                  <input type='hidden' name='sid[]'' value='".$row["sid"]."' />
                  <input type='hidden' name='aid[]'' value='".$_GET["aid"]."' />
                   <div class='radio '>
-  <label style='width: 100px'><input type='radio' name='att[".$x."]' value='Present' checked> &nbsp&nbsp&nbspPresent</label>
-  <label style='width: 100px'><input type='radio' name='att[".$x."]' value='Absent' checked> &nbsp&nbsp&nbspAbsent</label>
+  <label style='width: 100px'><input type='radio' name='att[".$x."]' value='Присутсвует' checked> &nbsp&nbsp&nbspPresent</label>
+  <label style='width: 100px'><input type='radio' name='att[".$x."]' value='Отсутсвует' checked> &nbsp&nbsp&nbspAbsent</label>
 
 </div>
                  
@@ -258,7 +260,7 @@ x.style.display='block';</script>";
               </table>
             </div>
             <div class="box-footer">
-                <button type="submit" name="submitatt" value="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" name="submitatt" value="submit" class="btn btn-primary">Отправить</button>
               </div>
 
             </form>
@@ -275,7 +277,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Students Attendance</h3>
+              <h3 class="box-title">Посещаемость студентов</h3>
             </div>
             
             <!-- /.box-header -->
@@ -283,9 +285,9 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Student ID</th>
-                  <th>Name</th>
-                  <th>Attendance</th>
+                  <th>Id студента</th>
+                  <th>ФИО</th>
+                  <th>Посещаемость</th>
                   
                   
                 </tr>

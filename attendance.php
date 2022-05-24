@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Attendance</title><link rel="icon" href="../img/favicon2.png">
+  <title>Посещаемость</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -62,12 +62,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Attendance
-        <small>Attendance Details</small>
+      Посещаемость
+        <small>Детали посещаемости</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Attendance</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Посещаемость</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -83,8 +83,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Attendance Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новая посещаемость успешно добавлена
               </div>
 
 
@@ -95,7 +95,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Attendance</h3>
+              <h3 class="box-title">Новая посещаемость</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -105,8 +105,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                <label>Schedule</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="schedule"><option >Select Schedule</option>
+                <label>Расписание</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="schedule">
+                <option >Выберите расписание</option>
                   <?php
                   $sql = "SELECT * FROM schedule";
                   $result = $conn->query($sql);
@@ -122,7 +123,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                  <div class="form-group">
                  
-                <label>Date</label>
+                <label>Дата</label>
 
                 <div class="input-group date">
                   <div class="input-group-addon">
@@ -140,7 +141,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Attendance</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить посещаемость</button>
               </div>
             </form>
 
@@ -166,15 +167,9 @@ x.style.display='block';</script>";
                     
                   } catch (Exception $e) {
                     
-                  }
-
-
-
-
-
-                  
+                  } 
                 # code...
-                                            }
+                                }
 
               ?>
 
@@ -187,7 +182,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Attendances</h3>
+              <h3 class="box-title">Все посещаемости</h3>
             </div>
             
             <!-- /.box-header -->
@@ -195,12 +190,12 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Attendance ID</th>
-                  <th>Subject</th>
-                  <th>Classroom</th>
-                  <th>Date</th>
-                  <th>Start Time</th>
-                  <th>Actions</th>
+                  <th>ID посещаемости</th>
+                  <th>Предмет</th>
+                  <th>Класс</th>
+                  <th>Дата</th>
+                  <th>Время начала</th>
+                  <th>Действия</th>
                   
                 </tr>
                 </thead>
@@ -215,8 +210,10 @@ x.style.display='block';</script>";
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["aid"]. " </td><td> " . $row["subject"]." </td><td> " . $row["class"]." </td><td> " . $row["date"]. "</td><td>" . $row["stime"]. "</td> 
-                      <td><a href='attendancelist.php?aid=". $row["aid"]."&class=". $row["class"]."&stime=". $row["stime"]."&date=". $row["date"]."&subject=". $row["subject"]."'><small class='label  bg-green'>View Report</small></a></td></tr>";
+                      echo "<tr><td> " . $row["aid"]. " </td><td> " . $row["subject"]." </td><td> " . $row["class"]." </td><td> " . 
+                      $row["date"]. "</td><td>" . $row["stime"]. "</td> 
+                      <td><a href='attendancelist.php?aid=". $row["aid"]."&class=". $row["class"]."&stime=". $row["stime"]."&date=". 
+                      $row["date"]."&subject=". $row["subject"]."'><small class='label  bg-green'>Посмотреть отчет</small></a></td></tr>";
                        }
                                   }
 

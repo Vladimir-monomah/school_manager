@@ -18,28 +18,27 @@ if (!isset($_SESSION['user'])) {
 <!DOCTYPE html>
 
 <!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
+Стартовая страница для пользователя с ролью "Учитель"
 -->
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Dashboard</title><link rel="icon" href="../img/favicon2.png">
-  <!-- Tell the browser to be responsive to screen width -->
+  <title> Информационная панель для учителя</title><link rel="icon" href="../img/favicon2.png">
+  <!-- Адаптация под браузер -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
+  <!-- Настройка шрифта -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
+  <!-- Иконки -->
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
 
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
-  <!-- Theme style -->
+  <!-- Стиль страницы -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
@@ -50,26 +49,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition skin-green sidebar-mini">
 <div class="wrapper">
 
-  <!-- Main Header -->
+  <!-- Основной заголовок -->
  <?php include_once 'header.php'; ?>
-  <!-- Left side column. contains the logo and sidebar -->
+  <!-- Левая боковая колонка. Содержит логотип и боковую панель -->
   <?php include_once 'sidebar.php'; ?>
 
-  <!-- Content Wrapper. Contains page content -->
+  <!-- Контент-обертка. Содержит содержимое страницы -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+    <!-- Заголовок содержимого (заголовок страницы) -->
     <section class="content-header">
       <h1>
-        School
-        <small>Overview</small>
+        Школа
+        <small>Обзор</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> School</a></li>
-        <li class="active">Stat</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Школа</a></li>
+        <li class="active">Ститистика</li>
       </ol>
     </section>
 
-    <!-- Main content -->
+    <!-- Основное содержание -->
 
 
     <section class="content">
@@ -86,7 +85,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             $result = $conn->query($sql1);
 
               if ($result->num_rows > 0) {
-                  // output data of each row
+                  // выходные данные каждой строки
                   while($row = $result->fetch_assoc()) {
                       echo "<h3>".$row['a']."</h3>";
                   }
@@ -95,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             ?>
 
               
-              <p>Total Students</p>
+              <p>Всего студентов</p>
             </div>
             <div class="icon">
               <i class="fa fa-users"></i>
@@ -112,7 +111,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             $result = $conn->query($sql2);
 
               if ($result->num_rows > 0) {
-                  // output data of each row
+                  // выходные данные каждой строки
                   while($row = $result->fetch_assoc()) {
                       echo "<h3>".$row['a']."</h3>";
                   }
@@ -121,7 +120,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             ?>
               
 
-              <p>Total Teachers</p>
+              <p>Всего учителей</p>
             </div>
             <div class="icon">
               <i class="fa fa-black-tie"></i>
@@ -138,7 +137,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             $result = $conn->query($sql3);
 
               if ($result->num_rows > 0) {
-                  // output data of each row
+                  // выходные данные каждой строки
                   while($row = $result->fetch_assoc()) {
                       echo "<h3>".$row['a']."</h3>";
                   }
@@ -146,7 +145,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
             ?>
 
-              <p>Total Subjects</p>
+              <p>Всего предметов</p>
             </div>
             <div class="icon">
               <i class="fa fa-book"></i>
@@ -163,7 +162,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             $result = $conn->query($sql4);
 
               if ($result->num_rows > 0) {
-                  // output data of each row
+                  // выходные данные каждой строки
                   while($row = $result->fetch_assoc()) {
                       echo "<h3>".$row['a']."</h3>";
                   }
@@ -172,7 +171,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             ?>
 
 
-              <p>Registered Parents</p>
+              <p>Зарегистрированные родители</p>
             </div>
             <div class="icon">
               <i class="fa fa-female"></i>
@@ -194,7 +193,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </div>
   <!-- /.content-wrapper -->
 
-  <!-- Main Footer -->
+  <!-- Основной нижний колонтитул -->
    <?php include_once 'footer.php'; ?>
 
   
