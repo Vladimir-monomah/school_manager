@@ -1,29 +1,24 @@
-# School-Management-System---PHP-MySQL
+# Автоматизированная система классного руководител---PHP-MySQL
 
 Available Functions
 
-  * Student Management;
-  * Subject Management;
-  * Class Room Management;
-  * Exam Management;
-  * Attendance Management;
-  * Teacher Management;
-  * Parents Management;
-  * User Management;
-  * School Notice Distribution;
+  * Управление студентами;
+  * Управление предметами;
+  * Классы;
+  * Экзамены;
+  * Посещаемость;
+  * Управление учителем;
+  * Управление родителями;
+  * Управление пользователями;
+  * Распространение школьных уведомлений;
   
-Setup Instruction
+Инструкция по установке
 
-01. Create new MySQL database 'schoolnew' and import provided schoolnew.sql file.
-02. Put all files and folders in your host's public directory.
+01. Создайте новую базу данных MySQL 'schoolnew' и импортируйте предоставленный файл schoolnew.sql.
+02. Поместите все файлы и папки в общий каталог вашего хоста.
 
-
-Demo 
-
-Visit [School Management System Demo](http://schoolms.gearhostpreview.com)
-
-* Teacher Login - Email: tea@tea.tea Password:tea;
-* Student Login - Email: stu@stu.stu Password:stu;
-* Parent Login - Email: par@par.par Password:par;
+* Учитель - Email: tea@tea.tea Пароль:tea;
+* Студент - Email: stu@stu.stu Пароль:stu;
+* Родитель - Email: par@par.par Пароль:par;
 
   
