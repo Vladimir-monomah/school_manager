@@ -129,7 +129,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" name='date' class="form-control pull-right" id="datepicker" placeholder="Select Date">
+                  <input type="text" name='date' class="form-control pull-right" id="datepicker" placeholder="Выберите дату">
                 </div>
                 <!-- /.input group -->
               
