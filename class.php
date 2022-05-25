@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Class Room</title><link rel="icon" href="../img/favicon2.png">
+  <title>Класс</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -61,12 +61,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Class Room
-        <small>Class Room Details</small>
+        Класс
+        <small>Детальный отчет по классу</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Class Room</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Класс</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -82,8 +82,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Class Room Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новый класс успешно добавлен
               </div>
 
 
@@ -94,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Class Room</h3>
+              <h3 class="box-title">Новый класс</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -104,22 +104,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                  
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Class Room ID</label>
+                  <label for="exampleInputPassword1">Идентификатор класса</label>
                   <input name="hno" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room ID" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Class Room Title</label>
+                  <label for="exampleInputPassword1">Название класса</label>
                   <input name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room Title" required>
                 </div>
 
 
                   <div class="form-group">
-                  <label for="exampleInputPassword1">Location</label>
+                  <label for="exampleInputPassword1">Местоположение</label>
                   <input name="location" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room Location" required>
                 </div>
                   <div class="form-group">
-                  <label for="exampleInputPassword1">Capacity</label>
+                  <label for="exampleInputPassword1">Количество</label>
                   <input name="capacity" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room Capacity" required>
                 </div>
                 
@@ -134,7 +134,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Class Room</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить класс</button>
               </div>
             </form>
 
@@ -185,7 +185,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Class Rooms</h3>
+              <h3 class="box-title">Список всех классов</h3>
             </div>
             
             <!-- /.box-header -->
@@ -193,10 +193,10 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Class Room ID</th>
-                  <th>Title</th>
-                  <th>Location</th>
-                   <th>Capacity</th>
+                  <th>ID класса</th>
+                  <th>Название</th>
+                  <th>Местоположение</th>
+                   <th>Количество</th>
                  
                  
                 </tr>
