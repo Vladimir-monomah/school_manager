@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exam</title><link rel="icon" href="../img/favicon2.png">
+  <title>Экзамен</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -62,12 +62,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Exam Reuslts
-        <small>Exam Reuslts Details</small>
+        Результаты экзамена
+        <small>Детальный отчет по результатам экзамена</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Exam Reuslts</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Результаты экзамена</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -82,7 +82,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
    
 <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Your Children</h3>
+              <h3 class="box-title">Список студентов</h3>
               
             </div>
             
@@ -91,9 +91,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Student ID</th>
-                  <th>Full Name</th>
-                 <th>Action</th>
+                  <th>ID студента</th>
+                  <th>ФИО</th>
+                 <th>Действие</th>
                   
                   
                 </tr>
@@ -109,7 +109,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["sid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td><a href='examresults-par.php?sid=". $row["sid"]."'><small class='label  bg-green'>View Results</small></a></td></tr>";
+                      echo "<tr><td> " . $row["sid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. 
+                      " </td><td><a href='examresults-par.php?sid=". $row["sid"]."'><small class='label  bg-green'>Результат</small></a></td></tr>";
                        }
                                   }
 
@@ -131,7 +132,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
  <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Exams</h3>
+              <h3 class="box-title">Список экзаменов</h3>
             </div>
             
             <!-- /.box-header -->
@@ -139,10 +140,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <table id="example12" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Exam ID</th>
-                  <th>Student ID</th>
-                  <th>Marks</th>
-                  <th>Grade</th>
+                  <th>ID экзамена</th>
+                  <th>ID студента</th>
+                  <th>Баллы</th>
+                  <th>Оценка</th>
                   
                   
                 </tr>
