@@ -41,7 +41,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Subject</title><link rel="icon" href="../img/favicon2.png">
+  <title>Предмет</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -77,12 +77,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Subject
-        <small>Subject Details</small>
+        Предмет
+        <small>Отчет по предметам</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Subject</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Предмет</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -101,8 +101,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Subject Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новый предмет был успешно добавлен
               </div>
 
 
@@ -113,7 +113,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Subject</h3>
+              <h3 class="box-title">Новый предмет</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -123,13 +123,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                  
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Subject ID</label>
-                  <input name="sid" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Subject ID" required>
+                  <label for="exampleInputPassword1">ID предмета</label>
+                  <input name="sid" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите ID предмета" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Subject Title</label>
-                  <input name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Subject Title" required>
+                  <label for="exampleInputPassword1">Название предмета</label>
+                  <input name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите название предмета" required>
                 </div>
 
                 
@@ -138,7 +138,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Syllubus Details</label>
+    <label for="exampleFormControlTextarea1">Детали программы</label>
     <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
   </div>
    
@@ -149,7 +149,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Subject</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить предмет</button>
               </div>
             </form>
 
@@ -203,8 +203,8 @@ x.style.display='block';</script>";
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                 Subject Updated Successfully 
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                 Предмет был обновлен
               </div>
 
 
@@ -215,7 +215,7 @@ x.style.display='block';</script>";
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Update Subject</h3>
+              <h3 class="box-title">Обновить предмет</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -225,12 +225,12 @@ x.style.display='block';</script>";
                  
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Subject ID</label>
+                  <label for="exampleInputPassword1">ID предмета</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$sid."'"; ?> disabled>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Subject Title</label>
+                  <label for="exampleInputPassword1">Название предмета</label>
                   <input name="title" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$title."'"; ?>>
                 </div>
 
@@ -240,7 +240,7 @@ x.style.display='block';</script>";
 
 
                 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Syllubus Details</label>
+    <label for="exampleFormControlTextarea1">Детали программы</label>
     <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="10"><?php echo $description; ?></textarea>
   </div>
    
@@ -251,7 +251,7 @@ x.style.display='block';</script>";
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Update Subject</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Обновить предмет</button>
               </div>
             </form>
 
@@ -306,7 +306,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Subjects</h3>
+              <h3 class="box-title">Список предметов</h3>
             </div>
             
             <!-- /.box-header -->
@@ -314,10 +314,10 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Subject ID</th>
-                  <th>Title</th>
-                  <th>Details</th>
-                  <th>Action</th>
+                  <th>ID</th>
+                  <th>Название</th>
+                  <th>Детали</th>
+                  <th>Действия</th>
                  
                 </tr>
                 </thead>
@@ -332,7 +332,8 @@ x.style.display='block';</script>";
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["sid"]. " </td><td> " . $row["title"]. "</td><td>" . $row["description"]. "</td><td><a href='subject.php?update=". $row["sid"]."'><small class='label  bg-orange'>Update</small></a></td></tr>";
+                      echo "<tr><td> " . $row["sid"]. " </td><td> " . $row["title"]. "</td><td>" 
+                      . $row["description"]. "</td><td><a href='subject.php?update=". $row["sid"]."'><small class='label  bg-orange'>Обновить</small></a></td></tr>";
                        }
                                   }
 
