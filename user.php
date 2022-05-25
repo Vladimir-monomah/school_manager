@@ -31,7 +31,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exam</title><link rel="icon" href="../img/favicon2.png">
+  <title>Пользователи</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -68,12 +68,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Users
-        <small>Users Details</small>
+        Пользователи
+        <small>Детальный отчет по пользователям</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Users</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Пользователи</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -89,8 +89,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New User Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+               Новый пользователь был добавлен
               </div>
 
 
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New User</h3>
+              <h3 class="box-title">Новый пользователь</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -112,7 +112,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                 <div class="form-group">
                 <label>Exam</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="email"><option >Select Email</option>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" 
+                aria-hidden="true" name="email"><option >Выберите Email</option>
                   <?php
                   $sql = "select email from (select email from parent UNION select email from student UNION select email from teacher) as t";
                   $result = $conn->query($sql);
@@ -133,16 +134,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input name="password" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" required>
+                  <label for="exampleInputPassword1">Пароль</label>
+                  <input name="password" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль" required>
                 </div>
 
                 <div class="form-group">
-                <label>Permission Role </label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="role"><option >Select Role</option>
-                 <option value="Teacher">Teacher</option>
-                 <option value="Student">Student</option>
-                 <option value="Parent">Parent</option>
+                <label>Роль</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" 
+                aria-hidden="true" name="role"><option >Выберите роль</option>
+                 <option value="Teacher">Учитель</option>
+                 <option value="Student">Студент</option>
+                 <option value="Parent">Родитель</option>
                 
                 </select>
                 </div>
@@ -152,7 +154,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Result</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить</button>
               </div>
             </form>
 
@@ -210,7 +212,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Users</h3>
+              <h3 class="box-title">Список пользователей</h3>
             </div>
             
             <!-- /.box-header -->
@@ -220,7 +222,7 @@ x.style.display='block';</script>";
                 <tr>
                   <th>Email</th>
                   
-                  <th>Permission Role</th><th>Action</th>
+                  <th>Роль</th><th>Действия</th>
                  
                   
                   
@@ -238,7 +240,7 @@ x.style.display='block';</script>";
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
                       echo "<tr><td> " . $row["email"]. " </td><td> " . $row["role"]." </td>
-                      <td><a href='user.php?delete=". $row["email"]."'><small class='label  bg-red'>Delete</small></a>
+                      <td><a href='user.php?delete=". $row["email"]."'><small class='label  bg-red'>Удалить</small></a>
                       </td></tr>";
                        }
                                   }
