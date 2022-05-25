@@ -105,22 +105,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                 <div class="form-group">
                   <label for="exampleInputPassword1">Идентификатор класса</label>
-                  <input name="hno" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room ID" required>
+                  <input name="hno" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите Id класса" required>
                 </div>
 
                 <div class="form-group">
                   <label for="exampleInputPassword1">Название класса</label>
-                  <input name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room Title" required>
+                  <input name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите название класса" required>
                 </div>
 
 
                   <div class="form-group">
                   <label for="exampleInputPassword1">Местоположение</label>
-                  <input name="location" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room Location" required>
+                  <input name="location" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите расположение класса" required>
                 </div>
                   <div class="form-group">
                   <label for="exampleInputPassword1">Количество</label>
-                  <input name="capacity" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Class Room Capacity" required>
+                  <input name="capacity" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите количество студентов в классе" required>
                 </div>
                 
 
