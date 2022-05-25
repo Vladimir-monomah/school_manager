@@ -31,7 +31,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exam</title><link rel="icon" href="../img/favicon2.png">
+  <title>Экзамен</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, Notice-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -68,12 +68,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Notice
-        <small>Notice Details</small>
+      Уведомление
+        <small>Отчет по уведомлениям</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Notice</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Уведомления</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -89,8 +89,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Notice Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новое уведомление добавлено
               </div>
 
 
@@ -101,7 +101,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Notice</h3>
+              <h3 class="box-title">Новое уведомление</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -110,18 +110,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                     <div class="form-group">
-    <label for="exampleFormControlTextarea1">Notice</label>
+    <label for="exampleFormControlTextarea1">Уведомление</label>
     <textarea name="notice" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
   </div>
 
 
 
                 <div class="form-group">
-                <label>Odience </label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="odience"><option >Select Odience</option>
-                 <option value="All">All</option>
-                 <option value="Student">Student</option>
-                 <option value="Parent">Parent</option>
+                <label>Выбор получателя</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="odience"><option >Выбрать получателя</option>
+                 <option value="All">Все</option>
+                 <option value="Student">Студенты</option>
+                 <option value="Parent">Родители</option>
                 
                 </select>
                 </div>
@@ -131,7 +131,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Notice</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить уведомление</button>
               </div>
             </form>
 
@@ -189,7 +189,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Notice</h3>
+              <h3 class="box-title">Список уведомлений</h3>
             </div>
             
             <!-- /.box-header -->
@@ -197,11 +197,13 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Notice ID</th>
+                  <th>ID уведомления</th>
                   
-                  <th>Notice</th>
+                  <th>Уведомление</th>
 
-                  <th>Date and Time</th><th>Action</th>
+                  <th>Дата и время</th>
+                  
+                  <th>Действия</th>
                  
                   
                   
@@ -219,7 +221,7 @@ x.style.display='block';</script>";
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
                       echo "<tr><td> " . $row["id"]. " </td><td> " . $row["notice"]." </td><td> " . $row["date"]." </td>
-                      <td><a href='Notice.php?delete=". $row["id"]."'><small class='label  bg-red'>Delete</small></a>
+                      <td><a href='Notice.php?delete=". $row["id"]."'><small class='label  bg-red'>Удалить</small></a>
                       </td></tr>";
                        }
                                   }

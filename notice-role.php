@@ -31,7 +31,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exam</title><link rel="icon" href="../img/favicon2.png">
+  <title>Экзамен</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, Notice-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -68,12 +68,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Notice
-        <small>Notice Details</small>
+        Уведомление
+        <small>Детальный отчет по уведомлениям</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Notice</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Уведомление</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -90,7 +90,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Notice</h3>
+              <h3 class="box-title">Список уведомлений</h3>
             </div>
             
             <!-- /.box-header -->
@@ -98,11 +98,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Notice ID</th>
+                  <th>ID уведомления</th>
                   
-                  <th>Notice</th>
+                  <th>Уведомление</th>
 
-                  <th>Date and Time</th>
+                  <th>Дата и время</th>
                  
                   
                   

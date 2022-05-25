@@ -287,7 +287,7 @@ x.style.display='block';</script>";
                 <tr>
                   <th>ID экзамена</th>
                   <th>Предмет</th>
-                  <th>Ответсвенный учитель</th>
+                  <th>ФИО учителя</th>
                   <th>Аудитория</th>
                   <th>Дата</th>
                   <th>Начало</th>
