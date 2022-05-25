@@ -47,7 +47,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Teacher</title><link rel="icon" href="../img/favicon2.png">
+  <title>Учителя</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -83,12 +83,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Teacher
-        <small>Teacher Details</small>
+        Учителя
+        <small>Подробный отчет по учителям</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Teacher</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Учитель</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -106,14 +106,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Teacher Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новый учитель был добавлен
               </div>
 
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Teacher</h3>
+              <h3 class="box-title">Новый учитель</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -121,39 +121,39 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="box-body">
 
                  <div class="form-group">
-                  <label for="exampleInputPassword1">Teacher ID</label>
+                  <label for="exampleInputPassword1">ID учителя</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Teacher ID No" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">First Name</label>
-                  <input name="fname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Teacher First Name" required>
+                  <label for="exampleInputPassword1">Фамилия</label>
+                  <input name="fname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите фамилию" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Last Name</label>
-                  <input name="lname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Teacher Last Name" required>
+                  <label for="exampleInputPassword1">Имя</label>
+                  <input name="lname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите имя" required>
                 </div>
 
                  <div class="form-group">
                  
-                <label>Date of Birth</label>
+                <label>Дата рождения</label>
 
                 <div class="input-group date">
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" name='dob' class="form-control pull-right" id="datepicker" placeholder="Select Teacher's Data of Birth">
+                  <input type="text" name='dob' class="form-control pull-right" id="datepicker" placeholder="Введите дату рождения учителя">
                 </div>
                 <!-- /.input group -->
               
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Gender</label>
+                  <label for="exampleInputPassword1">Пол</label>
                   <div class="radio ">
-  <label style="width: 100px"><input type="radio" name="gender" value="Male" checked>Male</label>
-  <label style="width: 100px"><input type="radio" name="gender" value="Female" checked>Female</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Male" checked>Мужской</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Female" checked>Женский</label>
 
 </div>
                  
@@ -162,21 +162,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                   <div class="form-group">
                   <label for="exampleInputPassword1">Email</label>
-                  <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Teacher email" required>
+                  <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Введите email учителя" required>
                 </div>
 
 
                 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Address</label>
+    <label for="exampleFormControlTextarea1">Адрес</label>
     <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
   </div>
    <div class="form-group">
-                  <label for="exampleInputPassword1">Contact</label>
-                  <input name="contact" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Teacher Contact No" required>
+                  <label for="exampleInputPassword1">Номер телефона</label>
+                  <input name="contact" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите номер телефона" required>
                 </div>
 
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Skills</label>
+    <label for="exampleFormControlTextarea1">Навыки</label>
     <textarea name="skill" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
   </div>
 
@@ -189,7 +189,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Teacher</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить учителя</button>
               </div>
             </form>
 
@@ -216,7 +216,8 @@ $email = $_POST['email'];
 
                    
 
-                    $sql = "INSERT INTO Teacher (tid,fname,lname,bday,address,gender,skill,contact,email) VALUES ('".$tid."', '".$fname."', '".$lname."','".$dob."','".$address."','".$gender."','".$skill."','".$contact."','".$email."')";
+                    $sql = "INSERT INTO Teacher (tid,fname,lname,bday,address,gender,skill,contact,email) 
+                    VALUES ('".$tid."', '".$fname."', '".$lname."','".$dob."','".$address."','".$gender."','".$skill."','".$contact."','".$email."')";
 
                   if ($conn->query($sql) === TRUE) {
                          echo "<script type='text/javascript'> var x = document.getElementById('truemsg');
@@ -250,14 +251,14 @@ x.style.display='block';</script>";
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                 Teacher Update Successfully 
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Учитель успешно обновлен
               </div>
 
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Update Teacher</h3>
+              <h3 class="box-title">Обновить учителя</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -265,23 +266,23 @@ x.style.display='block';</script>";
               <div class="box-body">
 
                  <div class="form-group">
-                  <label for="exampleInputPassword1">Teacher ID</label>
+                  <label for="exampleInputPassword1">ID</label>
                   <input name="sid" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$tid."'"; ?>>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">First Name</label>
+                  <label for="exampleInputPassword1">Имя</label>
                   <input name="fname" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$fname."'"; ?>>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Last Name</label>
+                  <label for="exampleInputPassword1">Фамилия</label>
                   <input name="lname" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$lname."'"; ?>>
                 </div>
 
                  <div class="form-group">
                  
-                <label>Date of Birth</label>
+                <label>Дата рождения</label>
 
                 <div class="input-group date">
                   <div class="input-group-addon">
@@ -294,10 +295,10 @@ x.style.display='block';</script>";
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Gender</label>
+                  <label for="exampleInputPassword1">Пол</label>
                   <div class="radio ">
-  <label style="width: 100px"><input type="radio" name="gender" value="Male" <?php if($gender=='Male'){echo 'checked';} ?>>Male</label>
-  <label style="width: 100px"><input type="radio" name="gender" value="Female" <?php if($gender=='Female'){echo 'checked';} ?>>Female</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Male" <?php if($gender=='Male'){echo 'checked';} ?>>Мцжской</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Female" <?php if($gender=='Female'){echo 'checked';} ?>>Женский</label>
 
 </div>
                  
@@ -311,17 +312,17 @@ x.style.display='block';</script>";
 
 
                 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Address</label>
+    <label for="exampleFormControlTextarea1">Адрес</label>
     <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="2"><?php echo $address; ?></textarea>
   </div>
 
    <div class="form-group">
-                  <label for="exampleInputPassword1">Contact</label>
+                  <label for="exampleInputPassword1">Номер телефона</label>
                   <input name="contact" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$contact."'"; ?>>
                 </div>
 
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Skills</label>
+    <label for="exampleFormControlTextarea1">Навыки</label>
     <textarea name="skill" class="form-control" id="exampleFormControlTextarea1" rows="2"><?php echo $skill; ?></textarea>
   </div>
 
@@ -334,7 +335,7 @@ x.style.display='block';</script>";
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Update Teacher</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Обновить учителя</button>
               </div>
             </form>
 
@@ -359,7 +360,8 @@ x.style.display='block';</script>";
                   try {
 
 
-                   $sql = "UPDATE teacher SET fname='".$fname."',lname='".$lname."',bday='".$dob."',address='".$address."',gender='".$gender."',skill='".$skill."',contact='".$contact."',email='".$email."' WHERE tid = '".$tid."'";
+                   $sql = "UPDATE teacher SET fname='".$fname."',lname='".$lname."',bday='".$dob."',address='".$address."',
+                   gender='".$gender."',skill='".$skill."',contact='".$contact."',email='".$email."' WHERE tid = '".$tid."'";
 
                    // $sql = "INSERT INTO Teacher (tid,fname,lname,bday,address,gender,skill,contact,email) VALUES ('".$tid."', '".$fname."', '".$lname."','".$dob."','".$address."','".$gender."','".$skill."','".$contact."','".$email."')";
 
@@ -395,7 +397,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Teachers</h3>
+              <h3 class="box-title">Список учителей</h3>
             </div>
             
             <!-- /.box-header -->
@@ -403,14 +405,14 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Teacher ID</th>
-                  <th>Full Name</th>
-                  <th>Date of Birth</th>
-                  <th>Gender</th>
-                  <th>Address</th>
-                  <th>Contact</th>
-                  <th>Skills</th>
-                  <th>Actions</th>
+                  <th>ID</th>
+                  <th>ФИО</th>
+                  <th>Дата рождения</th>
+                  <th>Пол</th>
+                  <th>Адрес</th>
+                  <th>Номер телефона</th>
+                  <th>Навыки</th>
+                  <th>Действия</th>
                   
                 </tr>
                 </thead>
@@ -425,7 +427,9 @@ x.style.display='block';</script>";
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["tid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td> " . $row["bday"]. "</td><td>" . $row["gender"]. "</td><td>" . $row["address"]. "</td><td>" . $row["contact"]. "</td><td>" . $row["skill"]. "</td><td><a href='teacher.php?update=". $row["tid"]."'><small class='label  bg-orange'>Update</small></a></td></tr>";
+                      echo "<tr><td> " . $row["tid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td> " . $row["bday"]. "</td><td>" . 
+                      $row["gender"]. "</td><td>" . $row["address"]. "</td><td>" . $row["contact"]. "</td><td>" . $row["skill"]. "</td>
+                      <td><a href='teacher.php?update=". $row["tid"]."'><small class='label  bg-orange'>Обновить</small></a></td></tr>";
                        }
                                   }
 
