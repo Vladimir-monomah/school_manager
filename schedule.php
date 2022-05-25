@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Schedule</title><link rel="icon" href="../img/favicon2.png">
+  <title>Расписание</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -62,12 +62,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Schedule
-        <small>Schedule Details</small>
+        Расписание
+        <small>Детальный отчет по расписанию</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Schedule</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Расписание</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -83,8 +83,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Schedule Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новое расписание добавлено
               </div>
 
 
@@ -95,7 +95,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Schedule</h3>
+              <h3 class="box-title">Новое расписание</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -105,8 +105,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                <label>Subject</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="subject"><option >Select Subject</option>
+                <label>Предмет</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" 
+                aria-hidden="true" name="subject"><option >Выбрать предмет</option>
                   <?php
                   $sql = "SELECT * FROM subject";
                   $result = $conn->query($sql);
@@ -121,8 +122,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
 
                 <div class="form-group">
-                <label>Teacher</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="teacher"><option >Select Teacher</option>
+                <label>Учитель</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" 
+                aria-hidden="true" name="teacher"><option >Выбрать учителя</option>
                   <?php
                   $sql = "SELECT * FROM teacher";
                   $result = $conn->query($sql);
@@ -138,8 +140,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                <label>Class Room</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="classroom"><option >Select Class Room</option>
+                <label>Класс</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" 
+                aria-hidden="true" name="classroom"><option >Выбрать класс</option>
                   <?php
                   $sql = "SELECT * FROM classroom";
                   $result = $conn->query($sql);
@@ -154,15 +157,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
 
                 <div class="form-group">
-                <label>Day</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="day"><option >Select Day</option>
-                 <option value="Monday" >Monday</option>
-                 <option value="Tuesday" >Tuesday</option>
-                 <option value="Wendsday" >Wendsday</option>
-                 <option value="Thursday" >Thursday</option>
-                 <option value="Friday" >Friday</option>
-                 <option value="Saturday" >Saturday</option>
-                 <option value="Sunday" >Sunday</option>
+                <label>День</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" 
+                aria-hidden="true" name="day"><option >Выбрать день</option>
+                 <option value="Monday" >Понедельник</option>
+                 <option value="Tuesday" >Вторник</option>
+                 <option value="Wendsday" >Среда</option>
+                 <option value="Thursday" >Четверг</option>
+                 <option value="Friday" >Пятница</option>
+                 <option value="Saturday" >Суббота</option>
                 </select>
                 </div>
 
@@ -170,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
    
            <div class="bootstrap-timepicker">
                 <div class="form-group">
-                  <label>Start Time:</label>
+                  <label>Начало:</label>
 
                   <div class="input-group">
                     <input name="stime" type="text" class="form-control timepicker">
@@ -187,7 +190,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <div class="bootstrap-timepicker">
                 <div class="form-group">
-                  <label>End Time:</label>
+                  <label>Конец:</label>
 
                   <div class="input-group">
                     <input name="etime" type="text" class="form-control timepicker">
@@ -215,7 +218,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Schedule</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить расписание</button>
               </div>
             </form>
 
@@ -242,7 +245,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                    
 
-                    $sql = "INSERT INTO schedule (subject,teacher,class,day,stime,etime) VALUES ('".$subject."', '".$teacher."', '".$classroom."','".$day."','".$stime."','".$etime."')";
+                    $sql = "INSERT INTO schedule (subject,teacher,class,day,stime,etime) 
+                    VALUES ('".$subject."', '".$teacher."', '".$classroom."','".$day."','".$stime."','".$etime."')";
 
                   if ($conn->query($sql) === TRUE) {
                          echo "<script type='text/javascript'> var x = document.getElementById('truemsg');
@@ -273,7 +277,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Schedules</h3>
+              <h3 class="box-title">Список расписания</h3>
             </div>
             
             <!-- /.box-header -->
@@ -281,13 +285,13 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Schedule ID</th>
-                  <th>Subject</th>
-                  <th>Teacher</th>
-                  <th>Classroom</th>
-                  <th>Day</th>
-                  <th>Start Time</th>
-                  <th>End Time</th>
+                  <th>ID</th>
+                  <th>Предмет</th>
+                  <th>Учитель</th>
+                  <th>Класс</th>
+                  <th>День</th>
+                  <th>Начало</th>
+                  <th>Конец</th>
                   
                 </tr>
                 </thead>
@@ -302,7 +306,8 @@ x.style.display='block';</script>";
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["id"]. " </td><td> " . $row["subject"]." </td><td> " . $row["teacher"]." </td><td> " . $row["class"]. "</td><td>" . $row["day"]. "</td><td>" . $row["stime"]. "</td><td>" . $row["etime"]. "</td></tr>";
+                      echo "<tr><td> " . $row["id"]. " </td><td> " . $row["subject"]." </td><td> " . $row["teacher"]." </td><td> " 
+                      . $row["class"]. "</td><td>" . $row["day"]. "</td><td>" . $row["stime"]. "</td><td>" . $row["etime"]. "</td></tr>";
                        }
                                   }
 
