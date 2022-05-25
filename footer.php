@@ -4,5 +4,5 @@
     Автоматизированная система классного руководителя
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2022.</strong> Все права защищены.
+    <strong>Авторские права &copy; 2022.</strong> Все права защищены.
   </footer>
