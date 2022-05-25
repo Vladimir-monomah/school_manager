@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exam</title><link rel="icon" href="../img/favicon2.png">
+  <title>Экзамен</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -62,12 +62,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Exam Reuslts
-        <small>Exam Reuslts Details</small>
+        Результаты экзамена
+        <small>Детальный отчет по результатам экзамена</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Exam Reuslts</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Результаты экзамена</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -83,8 +83,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Exam Reuslts Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новый результат экзамена добавлен
               </div>
 
 
@@ -95,7 +95,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Exam Reuslts</h3>
+              <h3 class="box-title">Новые результаты экзамена</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -105,8 +105,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                <label>Exam</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="exam"><option >Select Exam</option>
+                <label>Экзамен</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="exam"><option >Выбор экзамена</option>
                   <?php
                   $sql = "SELECT * FROM exam";
                   $result = $conn->query($sql);
@@ -125,7 +125,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                 <div class="form-group">
                 <label>Student</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="student"><option >Select Student</option>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="student"><option >Выбор студента</option>
                   <?php
                   $sql = "SELECT * FROM student";
                   $result = $conn->query($sql);
@@ -141,25 +141,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Marks</label>
+                  <label for="exampleInputPassword1">Баллы</label>
                   <input name="marks" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Marks" required>
                 </div>
 
                 <div class="form-group">
-                <label>Grade </label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="grade"><option >Select Grade</option>
-                 <option value="A+">A+</option>
-                 <option value="A">A</option>
-                 <option value="A-">A-</option>
-                 <option value="B+">B+</option>
-                 <option value="B">B</option>
-                 <option value="B-">B-</option>
-                 <option value="C+">C+</option>
-                 <option value="C">C</option>
-                 <option value="C-">C-</option>
-                 <option value="D+">D+</option>
-                 <option value="D">D</option>
-                 <option value="E">E</option>
+                <label>Оценка </label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="grade"><option >Выбор оценки</option>
+                 <option value="A+">5</option>
+                 <option value="A">4</option>
+                 <option value="A-">3</option>
+                 <option value="B+">2</option>
                 </select>
                 </div>
 
@@ -168,7 +160,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Result</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить результат</button>
               </div>
             </form>
 
@@ -226,7 +218,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Exams</h3>
+              <h3 class="box-title">Список экзаменов</h3>
             </div>
             
             <!-- /.box-header -->
@@ -234,10 +226,10 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Exam ID</th>
-                  <th>Student ID</th>
-                  <th>Marks</th>
-                  <th>Grade</th>
+                  <th>ID экзамена</th>
+                  <th>ID студента</th>
+                  <th>Баллы</th>
+                  <th>Оценка</th>
                   
                   
                 </tr>
