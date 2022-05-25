@@ -105,7 +105,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                <label>Subject</label>
+                <label>Предмет</label>
                 <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="subject"><option >Выбор предмета</option>
                   <?php
                   $sql = "SELECT * FROM subject";
@@ -124,7 +124,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
                 <div class="form-group">
-                <label>Exam Hall (Class Room)</label>
+                <label>Класс</label>
                 <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="classroom"><option >Выбор класса</option>
                   <?php
                   $sql = "SELECT * FROM classroom";

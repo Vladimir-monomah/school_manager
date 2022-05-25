@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 28, 2020 at 11:47 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Хост: 127.0.0.1:3306
+-- Время создания: Май 25 2022 г., 21:44
+-- Версия сервера: 10.3.22-MariaDB
+-- Версия PHP: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `schoolnew`
+-- База данных: `schoolnew`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `attendance`
+-- Структура таблицы `attendance`
 --
 
 CREATE TABLE `attendance` (
@@ -35,18 +34,18 @@ CREATE TABLE `attendance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `attendance`
+-- Дамп данных таблицы `attendance`
 --
 
 INSERT INTO `attendance` (`sid`, `date`, `aid`) VALUES
-(2, '2020-05-25', 3),
-(1, '2020-05-30', 4),
-(2, '2020-05-02', 5);
+(2, '2022-05-25', 3),
+(1, '2022-05-30', 4),
+(2, '2022-05-02', 5);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `attendancereport`
+-- Структура таблицы `attendancereport`
 --
 
 CREATE TABLE `attendancereport` (
@@ -56,19 +55,19 @@ CREATE TABLE `attendancereport` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `attendancereport`
+-- Дамп данных таблицы `attendancereport`
 --
 
 INSERT INTO `attendancereport` (`aid`, `sid`, `status`) VALUES
-(3, 'ST1000010001', 'Absent'),
-(3, 'ST1000010002', 'Present'),
-(4, 'ST1000010001', 'Present'),
-(4, 'ST1000010002', 'Present');
+(3, 'ST1000010001', 'Отсутствует'),
+(3, 'ST1000010002', 'Присутствует'),
+(4, 'ST1000010001', 'Присутствует'),
+(4, 'ST1000010002', 'Присутствует');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `classroom`
+-- Структура таблицы `classroom`
 --
 
 CREATE TABLE `classroom` (
@@ -79,7 +78,7 @@ CREATE TABLE `classroom` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `classroom`
+-- Дамп данных таблицы `classroom`
 --
 
 INSERT INTO `classroom` (`hno`, `title`, `location`, `capacity`) VALUES
@@ -88,7 +87,7 @@ INSERT INTO `classroom` (`hno`, `title`, `location`, `capacity`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `exam`
+-- Структура таблицы `exam`
 --
 
 CREATE TABLE `exam` (
@@ -102,16 +101,16 @@ CREATE TABLE `exam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `exam`
+-- Дамп данных таблицы `exam`
 --
 
 INSERT INTO `exam` (`id`, `subject`, `teacher`, `classroom`, `date`, `stime`, `etime`) VALUES
-(1, 'SCM4251', 'TC1000020000', '4-B', '2020-05-26', '11:45:00', '12:45:00');
+(1, 'SCM4251', 'TC1000020000', '4-B', '2022-05-26', '11:45:00', '12:45:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `examresult`
+-- Структура таблицы `examresult`
 --
 
 CREATE TABLE `examresult` (
@@ -122,17 +121,17 @@ CREATE TABLE `examresult` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `examresult`
+-- Дамп данных таблицы `examresult`
 --
 
 INSERT INTO `examresult` (`exam`, `student`, `marks`, `grade`) VALUES
-(1, 'ST1000010001', 55, 'C+'),
-(1, 'ST1000010002', 77, 'A+');
+(1, 'ST1000010001', 55, '3'),
+(1, 'ST1000010002', 77, '5');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `notice`
+-- Структура таблицы `notice`
 --
 
 CREATE TABLE `notice` (
@@ -143,17 +142,17 @@ CREATE TABLE `notice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `notice`
+-- Дамп данных таблицы `notice`
 --
 
 INSERT INTO `notice` (`id`, `notice`, `odience`, `date`) VALUES
-(2, 'Meeting', 'Parent', '2020-05-28 02:53:02'),
-(3, 'aaasas', 'All', '2020-05-28 02:57:28');
+(2, 'Meeting', 'Parent', '2022-05-28 02:53:02'),
+(3, 'aaasas', 'All', '2022-05-28 02:57:28');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `parent`
+-- Структура таблицы `parent`
 --
 
 CREATE TABLE `parent` (
@@ -169,16 +168,16 @@ CREATE TABLE `parent` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `parent`
+-- Дамп данных таблицы `parent`
 --
 
 INSERT INTO `parent` (`pid`, `fname`, `lname`, `contact`, `job`, `address`, `gender`, `nic`, `email`) VALUES
-(1, 'Kamal ', 'Shantha', '0785566022', 'Engineer', 'Colombo Road\r\nPilimathalawa.', 'Male', '7855485552V', 'par@par.par');
+(1, 'Тимохин', 'Валерий', '89217523698', 'Инженер', 'Москва, Родины 5', 'Male', '7855485552V', 'par@par.par');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `schedule`
+-- Структура таблицы `schedule`
 --
 
 CREATE TABLE `schedule` (
@@ -192,17 +191,17 @@ CREATE TABLE `schedule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `schedule`
+-- Дамп данных таблицы `schedule`
 --
 
 INSERT INTO `schedule` (`id`, `subject`, `teacher`, `day`, `stime`, `class`, `etime`) VALUES
-(1, 'SCM4251', 'TC1000020000', 'Wendsday', '04:15:00', '4-B', '04:15:00'),
-(2, 'SCM4251', 'TC1000020000', 'Thursday', '05:30:00', '4-B', '07:45:00');
+(1, 'SCM4251', 'TC1000020000', 'Среда', '04:15:00', '4-B', '04:15:00'),
+(2, 'SCM4251', 'TC1000020000', 'Четверг', '05:30:00', '4-B', '07:45:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student`
+-- Структура таблицы `student`
 --
 
 CREATE TABLE `student` (
@@ -218,19 +217,19 @@ CREATE TABLE `student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `student`
+-- Дамп данных таблицы `student`
 --
 
 INSERT INTO `student` (`sid`, `fname`, `lname`, `bday`, `address`, `parent`, `gender`, `classroom`, `email`) VALUES
-('ST1000010001', 'Kasun', 'Chamara', '2001-06-26', 'Colombo Road \r\nKandy', 1, 'Male', '4-B', 'stu@stu.stu'),
-('ST1000010002', 'Dasun', 'Shanuka', '2020-05-31', 'Ampara Road \r\nUhana', 1, 'Male', '4-B', 'stu1@stu1.stu1'),
-('STU1000040000', 'Dilip', 'Silva', '2020-05-27', 'asasas', 0, 'Male', '4-B', 'dil@dil.dil'),
-('STU100004005', 'Hashini', 'Asiri', '2020-05-27', 'asassas', 1, 'Female', 'Select Class Room', 'h@h.h');
+('ST1000010001', 'Иванов', 'Иван', '2001-06-26', 'Москва, Гвардейская 56-7', 1, 'Male', '4-B', 'stu@stu.stu'),
+('ST1000010002', 'Герасимов', 'Антон', '2002-06-11', 'Ухана', 1, 'Male', '4-B', 'stu1@stu1.stu1'),
+('STU1000040000', 'Радмиров', 'Ильгиз', '2020-05-27', 'asasas', 0, 'Male', '4-B', 'dil@dil.dil'),
+('STU100004005', 'Хащини', 'Асири', '2009-06-23', 'asassas', 1, 'Female', 'Выберите класс', 'h@h.h');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `subject`
+-- Структура таблицы `subject`
 --
 
 CREATE TABLE `subject` (
@@ -240,16 +239,16 @@ CREATE TABLE `subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `subject`
+-- Дамп данных таблицы `subject`
 --
 
 INSERT INTO `subject` (`sid`, `title`, `description`) VALUES
-('SCM4251', 'Science and Technology', 'Chemistry Basics\r\n');
+('SCM4251', 'Наука и технология', 'Основы химии\r\n');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `teacher`
+-- Структура таблицы `teacher`
 --
 
 CREATE TABLE `teacher` (
@@ -265,16 +264,16 @@ CREATE TABLE `teacher` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `teacher`
+-- Дамп данных таблицы `teacher`
 --
 
 INSERT INTO `teacher` (`tid`, `fname`, `lname`, `address`, `contact`, `bday`, `skill`, `gender`, `email`) VALUES
-('TC1000020000', 'Nimal ', 'Soyza', 'Kandy Road\r\nNittambuwa', '0339988554', '1990-06-19', 'Science\r\nMathematics\r\nHistory', 'Male', 'tea@tea.tea');
+('TC1000020000', 'Садыков', 'Марат', 'Бугульма, Ленина 45А', '89124563697', '1990-06-19', 'Наука\r\nМатематика\r\nИстория', 'Male', 'tea@tea.tea');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Структура таблицы `user`
 --
 
 CREATE TABLE `user` (
@@ -284,7 +283,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Дамп данных таблицы `user`
 --
 
 INSERT INTO `user` (`role`, `email`, `password`) VALUES
@@ -293,114 +292,114 @@ INSERT INTO `user` (`role`, `email`, `password`) VALUES
 ('Teacher', 'tea@tea.tea', 'tea');
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `attendance`
+-- Индексы таблицы `attendance`
 --
 ALTER TABLE `attendance`
   ADD PRIMARY KEY (`aid`);
 
 --
--- Indexes for table `attendancereport`
+-- Индексы таблицы `attendancereport`
 --
 ALTER TABLE `attendancereport`
   ADD PRIMARY KEY (`aid`,`sid`);
 
 --
--- Indexes for table `classroom`
+-- Индексы таблицы `classroom`
 --
 ALTER TABLE `classroom`
   ADD PRIMARY KEY (`hno`);
 
 --
--- Indexes for table `exam`
+-- Индексы таблицы `exam`
 --
 ALTER TABLE `exam`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `examresult`
+-- Индексы таблицы `examresult`
 --
 ALTER TABLE `examresult`
   ADD PRIMARY KEY (`exam`,`student`);
 
 --
--- Indexes for table `notice`
+-- Индексы таблицы `notice`
 --
 ALTER TABLE `notice`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `parent`
+-- Индексы таблицы `parent`
 --
 ALTER TABLE `parent`
   ADD PRIMARY KEY (`pid`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Indexes for table `schedule`
+-- Индексы таблицы `schedule`
 --
 ALTER TABLE `schedule`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `student`
+-- Индексы таблицы `student`
 --
 ALTER TABLE `student`
   ADD PRIMARY KEY (`sid`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Indexes for table `subject`
+-- Индексы таблицы `subject`
 --
 ALTER TABLE `subject`
   ADD PRIMARY KEY (`sid`);
 
 --
--- Indexes for table `teacher`
+-- Индексы таблицы `teacher`
 --
 ALTER TABLE `teacher`
   ADD PRIMARY KEY (`tid`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Indexes for table `user`
+-- Индексы таблицы `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `attendance`
+-- AUTO_INCREMENT для таблицы `attendance`
 --
 ALTER TABLE `attendance`
   MODIFY `aid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `exam`
+-- AUTO_INCREMENT для таблицы `exam`
 --
 ALTER TABLE `exam`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `notice`
+-- AUTO_INCREMENT для таблицы `notice`
 --
 ALTER TABLE `notice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `parent`
+-- AUTO_INCREMENT для таблицы `parent`
 --
 ALTER TABLE `parent`
   MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `schedule`
+-- AUTO_INCREMENT для таблицы `schedule`
 --
 ALTER TABLE `schedule`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
