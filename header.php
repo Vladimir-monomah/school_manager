@@ -5,7 +5,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>S</b>MS</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Информационная панель</b>для учителя</span>
+      <span class="logo-lg"><b>АИС кл. рук.</span>
     </a>
 
     <!-- Header Navbar -->
