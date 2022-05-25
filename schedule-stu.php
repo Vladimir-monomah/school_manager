@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Schedule</title><link rel="icon" href="../img/favicon2.png">
+  <title>Расписание</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -62,12 +62,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Schedule
-        <small>Schedule Details</small>
+        Расписание
+        <small>Детальный список расписания</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Schedule</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Расписание</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -84,7 +84,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Your Schedules</h3>
+              <h3 class="box-title">Ваше расписание</h3>
             </div>
             
             <!-- /.box-header -->
@@ -92,13 +92,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Schedule ID</th>
-                  <th>Subject</th>
-                  <th>Teacher</th>
-                  <th>Classroom</th>
-                  <th>Day</th>
-                  <th>Start Time</th>
-                  <th>End Time</th>
+                  <th>ID расписания</th>
+                  <th>Предмет</th>
+                  <th>Учитель</th>
+                  <th>Класс</th>
+                  <th>День</th>
+                  <th>Начало</th>
+                  <th>Конец</th>
                   
                 </tr>
                 </thead>
@@ -117,7 +117,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                      while($row = $result->fetch_assoc()) {
                       $row2 = ($conn->query("select fname,lname from teacher where tid ='".$row["teacher"]."'"))->fetch_assoc();
                       $row3 = ($conn->query("select title from subject where sid ='".$row["subject"]."'"))->fetch_assoc();
-                      echo "<tr><td> " . $row["id"]. " </td><td> " . $row["subject"]." - " . $row3["title"]." </td><td> " . $row2["fname"]."  " . $row2["lname"]."</td><td> " . $row["class"]. "</td><td>" . $row["day"]. "</td><td>" . $row["stime"]. "</td><td>" . $row["etime"]. "</td></tr>";
+                      echo "<tr><td> " . $row["id"]. " </td><td> " . $row["subject"]." - " . $row3["title"]." </td><td> " . $row2["fname"]."  
+                      " . $row2["lname"]."</td><td> " . $row["class"]. "</td><td>" . $row["day"]. "</td><td>" . $row["stime"]. "</td><td>" . $row["etime"]. "</td></tr>";
                        }
                                   }
 
