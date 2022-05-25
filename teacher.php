@@ -297,7 +297,7 @@ x.style.display='block';</script>";
                 <div class="form-group">
                   <label for="exampleInputPassword1">Пол</label>
                   <div class="radio ">
-  <label style="width: 100px"><input type="radio" name="gender" value="Male" <?php if($gender=='Male'){echo 'checked';} ?>>Мцжской</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Male" <?php if($gender=='Male'){echo 'checked';} ?>>Мужской</label>
   <label style="width: 100px"><input type="radio" name="gender" value="Female" <?php if($gender=='Female'){echo 'checked';} ?>>Женский</label>
 
 </div>
