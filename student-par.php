@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Student</title><link rel="icon" href="../img/favicon2.png">
+  <title>Студенты</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -61,12 +61,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Your Children
-        <small>Your Children Details</small>
+        Ваш ребенок
+        <small>Детальный отчет по вашему ребенку</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Children</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Студент</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -83,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Your Children</h3>
+              <h3 class="box-title">Список детей</h3>
               
             </div>
             
@@ -92,13 +92,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Student ID</th>
-                  <th>Full Name</th>
-                  <th>Date of Birth</th>
-                  <th>Gender</th>
-                  <th>Address</th>
-                  <th>Classroom</th>
-                  <th>Parent</th>
+                  <th>ID студента</th>
+                  <th>ФИО</th>
+                  <th>Дата рождения</th>
+                  <th>Пол</th>
+                  <th>Адрес</th>
+                  <th>Класс</th>
+                  <th>Родители</th>
                   
                   
                 </tr>
@@ -114,7 +114,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["sid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td> " . $row["bday"]. "</td><td>" . $row["gender"]. "</td><td>" . $row["address"]. "</td><td>" . $row["classroom"]. "</td><td>" . $row["parent"]. "</td></tr>";
+                      echo "<tr><td> " . $row["sid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td> " 
+                      . $row["bday"]. "</td><td>" . $row["gender"]. "</td><td>" . $row["address"]. "</td><td>" . $row["classroom"]. "</td><td>" 
+                      . $row["parent"]. "</td></tr>";
                        }
                                   }
 
