@@ -48,7 +48,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Parent</title><link rel="icon" href="../img/favicon2.png">
+  <title>Родители</title><link rel="icon" href="../img/favicon2.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -84,12 +84,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Parent
-        <small>Parent Details</small>
+        Родители
+        <small>Отчет по родителям</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Parent</a></li>
-        <li class="active">Details</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Родители</a></li>
+        <li class="active">Детали</li>
       </ol>
     </section>
 
@@ -110,8 +110,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                New Parent Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Новый родитель успешно добавлен
               </div>
 
 
@@ -122,7 +122,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">New Parent</h3>
+              <h3 class="box-title">Новый родитель</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -132,47 +132,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
                  
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">First Name</label>
-                  <input name="fname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Parent First Name" required>
+                  <label for="exampleInputPassword1">Фамилия</label>
+                  <input name="fname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите фамилию" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Last Name</label>
-                  <input name="lname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Parent Last Name" required>
+                  <label for="exampleInputPassword1">Имя</label>
+                  <input name="lname" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите имя" required>
                 </div>
 
                   <div class="form-group">
-                  <label for="exampleInputPassword1">National Identity Card</label>
-                  <input name="nic" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Parent NIC" required>
+                  <label for="exampleInputPassword1">Номер идентификационной карты</label>
+                  <input name="nic" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите идентификационный номер карты" required>
                 </div>
                 
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Gender</label>
+                  <label for="exampleInputPassword1">Пол</label>
                   <div class="radio ">
-  <label style="width: 100px"><input type="radio" name="gender" value="Male" checked>Male</label>
-  <label style="width: 100px"><input type="radio" name="gender" value="Female" checked>Female</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Male" checked>Мужской</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Female" checked>Женский</label>
 
 </div>
                  
                 </div>
  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Address</label>
+    <label for="exampleFormControlTextarea1">Адрес1</label>
     <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
   </div>
 
                 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Address</label>
+    <label for="exampleFormControlTextarea1">Адрес2</label>
     <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
   </div>
    <div class="form-group">
-                  <label for="exampleInputPassword1">Contact</label>
-                  <input name="contact" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Parent Contact No" required>
+                  <label for="exampleInputPassword1">Номер телефона</label>
+                  <input name="contact" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите номер телефона" required>
                 </div>
 
                  <div class="form-group">
-                  <label for="exampleInputPassword1">Occupation</label>
-                  <input name="job" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Parent Occupation" required>
+                  <label for="exampleInputPassword1">Профессия</label>
+                  <input name="job" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите профессию" required>
                 </div>
 
 
@@ -181,7 +181,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Add Parent</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Добавить родителя</button>
               </div>
             </form>
 
@@ -208,7 +208,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                    
 
-                    $sql = "INSERT INTO Parent (fname,lname,address,gender,job,contact,nic,email) VALUES ( '".$fname."', '".$lname."','".$address."','".$gender."','".$job."','".$contact."','".$nic."','".$email."')";
+                    $sql = "INSERT INTO Parent (fname,lname,address,gender,job,contact,nic,email) 
+                    VALUES ( '".$fname."', '".$lname."','".$address."','".$gender."','".$job."','".$contact."','".$nic."','".$email."')";
 
                   if ($conn->query($sql) === TRUE) {
                          echo "<script type='text/javascript'> var x = document.getElementById('truemsg');
@@ -243,8 +244,8 @@ x.style.display='block';</script>";
 
          <div class="alert alert-success alert-dismissible" style="display: none;" id="truemsg">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <h4><i class="icon fa fa-check"></i> Success!</h4>
-                Update Parent Successfully added
+                <h4><i class="icon fa fa-check"></i> Успех!</h4>
+                Обновление родителя выполнено успешно
               </div>
 
 
@@ -255,7 +256,7 @@ x.style.display='block';</script>";
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Update Parent</h3>
+              <h3 class="box-title">Обновить родителя</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -265,26 +266,26 @@ x.style.display='block';</script>";
                  
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">First Name</label>
+                  <label for="exampleInputPassword1">Фамилия</label>
                   <input name="fname" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$fname."'"; ?>>
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Last Name</label>
+                  <label for="exampleInputPassword1">Имя</label>
                   <input name="lname" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$lname."'"; ?>>
                 </div>
 
                   <div class="form-group">
-                  <label for="exampleInputPassword1">National Identity Card</label>
+                  <label for="exampleInputPassword1">Номер идентификационной карты</label>
                   <input name="nic" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$nic."'"; ?>>
                 </div>
                 
 
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Gender</label>
+                  <label for="exampleInputPassword1">Пол</label>
                   <div class="radio ">
-  <label style="width: 100px"><input type="radio" name="gender" value="Male" <?php if($gender=='Male'){echo 'checked';} ?>>Male</label>
-  <label style="width: 100px"><input type="radio" name="gender" value="Female" <?php if($gender=='Female'){echo 'checked';} ?>>Female</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Male" <?php if($gender=='Male'){echo 'checked';} ?>>Мужской</label>
+  <label style="width: 100px"><input type="radio" name="gender" value="Female" <?php if($gender=='Female'){echo 'checked';} ?>>Женский</label>
 
 </div>
                  
@@ -298,17 +299,17 @@ x.style.display='block';</script>";
 
 
                 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Address</label>
+    <label for="exampleFormControlTextarea1">Адрес</label>
     <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="2"><?php echo $address; ?></textarea>
   </div>
 
    <div class="form-group">
-                  <label for="exampleInputPassword1">Contact</label>
+                  <label for="exampleInputPassword1">Номер телефона</label>
                   <input name="contact" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$contact."'"; ?>>
                 </div>
 
                  <div class="form-group">
-                  <label for="exampleInputPassword1">Occupation</label>
+                  <label for="exampleInputPassword1">Провессия</label>
                   <input name="job" type="text" class="form-control" id="exampleInputPassword1"  required value=<?php echo "'".$occupation."'"; ?>>
                 </div>
 
@@ -318,7 +319,7 @@ x.style.display='block';</script>";
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" name="submit" value="submit" class="btn btn-primary">Update Parent</button>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary">Обновить родителя</button>
               </div>
             </form>
 
@@ -343,7 +344,8 @@ x.style.display='block';</script>";
                   try {
 
 
-                   $sql = "UPDATE parent SET fname='".$fname."',lname='".$lname."',address='".$address."',gender='".$gender."',job='".$job."',contact='".$contact."',email='".$email."',nic='".$nic."' WHERE pid =".$pid;
+                   $sql = "UPDATE parent SET fname='".$fname."',lname='".$lname."',
+                   address='".$address."',gender='".$gender."',job='".$job."',contact='".$contact."',email='".$email."',nic='".$nic."' WHERE pid =".$pid;
 
                    // $sql = "INSERT INTO Parent (fname,lname,address,gender,job,contact,nic,email) VALUES ( '".$fname."', '".$lname."','".$address."','".$gender."','".$job."','".$contact."','".$nic."','".$email."')";
 
@@ -380,7 +382,7 @@ x.style.display='block';</script>";
 
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">All Parents</h3>
+              <h3 class="box-title">Список родителей</h3>
             </div>
             
             <!-- /.box-header -->
@@ -388,14 +390,14 @@ x.style.display='block';</script>";
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Parent ID</th>
-                  <th>Full Name</th>
+                  <th>ID родителя</th>
+                  <th>Имя</th>
                   <th>NIC</th>
-                  <th>Gender</th>
-                  <th>Address</th>
-                  <th>Contact</th>
-                  <th>Occupation</th>
-                  <th>Actions</th>
+                  <th>Пол</th>
+                  <th>Адрес</th>
+                  <th>Номер телефона</th>
+                  <th>Профессия</th>
+                  <th>Действия</th>
                   
                 </tr>
                 </thead>
@@ -410,7 +412,9 @@ x.style.display='block';</script>";
                   if ($result->num_rows > 0) {
                    // output data of each row
                      while($row = $result->fetch_assoc()) {
-                      echo "<tr><td> " . $row["pid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td> " . $row["nic"]. "</td><td>" . $row["gender"]. "</td><td>" . $row["address"]. "</td><td>" . $row["contact"]. "</td><td>" . $row["job"]. "</td><td><a href='parent.php?update=". $row["pid"]."'><small class='label  bg-orange'>Update</small></a></td></tr>";
+                      echo "<tr><td> " . $row["pid"]. " </td><td> " . $row["fname"]." ". $row["lname"]. " </td><td> " . $row["nic"]. "</td>
+                      <td>" . $row["gender"]. "</td><td>" . $row["address"]. "</td><td>" . $row["contact"]. "</td><td>" . $row["job"]. "</td>
+                      <td><a href='parent.php?update=". $row["pid"]."'><small class='label  bg-orange'>Обновить</small></a></td></tr>";
                        }
                                   }
 
