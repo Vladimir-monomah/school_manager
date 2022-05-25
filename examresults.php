@@ -142,7 +142,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                 <div class="form-group">
                   <label for="exampleInputPassword1">Баллы</label>
-                  <input name="marks" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Marks" required>
+                  <input name="marks" type="text" class="form-control" id="exampleInputPassword1" placeholder="Введите баллы" required>
                 </div>
 
                 <div class="form-group">
